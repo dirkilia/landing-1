@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,51 +11,481 @@ body {
     color: #4a4a4a;
 }
 
-.pricing caption {
-    text-align: left;
-    font-weight: bold;
-}
-
-.pricing {
-    min-width: 30%;
-    height: 400px;
-    margin-bottom: 3vh;
-}
-
-.pricing * {
-    border: 1px solid orange;
-    padding: 5px;
-}
-  
-.pricing tfoot {
-    font-weight: bold;
-}
-
 #block1 {
-    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5));
     color: #fff;
+    background-color: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5));
+    background-image: url(../img/bg_orange.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#block1 h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 59px;
+    max-height: 794px;
+}
+
+.wrapper_heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper_heading p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 36px;
+    margin-top: -3px;
+    color: #FFFFFF;
+}
+
+.wrapper_main {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 23px;
+    max-width: 1072px;
+}
+
+.wrapper_main .img_back{
+    position: absolute;
+    margin-top: -750px;
+}
+
+
+
+.wrapper_main .icons_block {
+    width: 1065px;
+    position: absolute;
+    top: 103px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.wrapper_main .icons_block .mobile_icon p{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.wrapper_main .main_h1 {
+    position: absolute;
+    width: 514px;
+    top: 250px;
+    left: 303px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper_main .choose p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
     font-size: 56px;
+    line-height: 76px;
     text-align: center;
+    letter-spacing: 0.845em;
     text-transform: uppercase;
+    
+    color: #FFFFFF;
 }
 
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+.wrapper_main .flutter p {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 128px;
+    line-height: 154px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -30px;
+    color: #FFFFFF;
+}
+
+.wrapper_main .both p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
     font-size: 36px;
+    line-height: 49px;
     text-align: center;
+    letter-spacing: 0.37em;
+    margin-top: -30px;
     text-transform: uppercase;
+
+    color: #FFFFFF;
 }
 
-#block2 h2, #block4 h2, #block6 h2 {
-    color: #000;
+/* shape, postitioning */
+.button_register {
+    position: absolute;
+    display: flex;
+    width: 186px;
+    height: 66px;
+    margin-top: -150px;
+    margin-left: 450px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* text */
+.button_register  {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #4A4A4A;
+
+}
+
+.button_register:hover  {
+    background: linear-gradient(90deg, #FC6F5C 0.72%, #FAA235 51.21%, #FB923B 99.57%);
+}
+
+/* #block2 */
+
+.blocks_wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 53px;
+    max-height: 863px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading svg path {
+    fill: black;
+}
+
+.heading .button_register {
+    position: static;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #4A4A4A;
+    width: 146px;
+    height: 46px;
+}
+
+.heading h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 6px;
+
+    color: #4A4A4A;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 71px;
+}
+
+#block2 .main_content {
+    margin-top: 111px;
+    width: 700px;
+    height: 203px;
+}
+
+#block2 .main_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 59px;
+    width: 1180px;
+}
+
+#block2 .main_content p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 24px;
+    color: #4A4A4A;
+    margin-bottom: 10px;
 } 
 
-#block3 h2, #block5 h2 {
-    color: #fff;
-} 
+#block2 .button_register {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4A4A4A;
+}
+
+#block2 .desc_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 341px;
+}
+
+#block2 .desc_card h2 {
+    margin-top: 9px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: -0.0366516px;
+    text-transform: uppercase;
+    color: #FF7E03;
+}
+
+#block2 .desc_card p {
+    margin-top: 22px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.0326923px;
+    color: #4A4A4A;
+}
+
+/* block3 */
+#block3 {
+    background: linear-gradient(0deg, #353535, #353535), linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8))
+}
+
+#block3 .heading svg path {
+    fill: white;
+}
+
+#block3 .button_register {
+    border: 1px solid #FFFFFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(0deg, #353535, #353535), linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8));
+}
+
+#block3 .button_register:hover {
+    background: linear-gradient(90deg, #FC6F5C 0.72%, #FAA235 51.21%, #FB923B 99.57%);;
+}
+
+#block3 .heading h2 {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #FFFFFF;
+}
+
+#block3 .main .main_content {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    margin-top: 79px;
+    width: 1180px;
+    height: 504px;
+}
+
+#block3 .main .main_content .info_blocks {
+    min-width: 590px;
+    min-height: 252px;
+    padding: 18px 0 21px 69px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.0326923px;
+    color: #FFFFFF;
+}
+
+#block3 .main .main_content .info_blocks .logo_with_text {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.0326923px;
+    color: #FFFFFF;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+#block3 .main .main_content .info_blocks .logo_with_text p {
+    margin-left: 8px;
+}
+
+#block3 .main .main_content .info_blocks h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+#block3 .main .main_content .info_blocks h2 ~ p {
+    margin-top: 33px;
+}
+
+#block3 .main .main_content .info_blocks h3 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.0326923px;
+    margin-top: 5px;
+    margin-left: 3px;
+    color: #FFFFFF;
+}
+
+#block3 .main .main_content .info_blocks.info_block_3 h2 {
+    margin-top: -14px;
+}
+
+#block3 .main .main_content .info_blocks.info_block_3 p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 13.2778px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 29px;    
+}
+
+#block3 .main .main_content .info_blocks.info_block_3 h3 {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 121px;
+    letter-spacing: -0.0871795px;
+    color: #FFFFFF;
+    margin-top: -21px;
+    margin-left: -1px;
+}
+
+#block3 .main .main_content .info_blocks.info_block_2 {
+    margin-left: -48px;
+}
+
+#block3 .main .main_content .info_blocks.info_block_2 p~p {
+    margin-top: 16px;
+}
+
+#block3 .main .main_content .info_blocks.info_block_4 {
+    margin-left: -50px;
+    margin-top: 75px;
+}
+
+#block3 .main .main_content .info_blocks.info_block_4 p{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 17.7778px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 2px;
+    margin-top: 1px;
+}
+
+#block3 .main .main_content .info_blocks.info_block_4 h3 {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 121px;
+    letter-spacing: -0.0871795px;
+    color: #FFFFFF;
+    margin-top: -22px;
+}
+
+/* block4 */
+
+#block4 .blocks_wrapper {
+    min-height: 289px;
+}
+
+#block4 .blocks_wrapper .heading h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    margin-left: 25px;
+    line-height: 36px;
+    letter-spacing: 6px;
+    color: #4A4A4A;
+}
+
+#block4 .blocks_wrapper .heading p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #4A4A4A;
+}
+
+#block4 .button_register {
+    position: static;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 62px;
+    width: 186px;
+    height: 66px;
+    background: linear-gradient(0deg, #FF7E03, #FF7E03);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
